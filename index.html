@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Willyam Ramos</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300&display=swap" rel="stylesheet">
@@ -15,108 +15,227 @@
 
 <body>
 
+    <div class='navbar'>
 
+        <li id='homeBtn'>
+            <a href=''>WR</a>
+        </li>
 
-    <main>
-        <div id='navbar'>
-            <ul class='main-links'>
+        <ul class='main-links'>
 
-                <li class="'main-link" id="homeBtn">
-                    <a href="#landingContent">WR</a>
-                </li>
+            <li class='main-link'>
+                <a href='#aboutMe'>About Me</a>
+            </li>
 
-                <li class="'main-link">
-                    <a href="#aboutMe">About Me</a>
-                </li>
+            <li class='main-link'>
+                <a href='#myWork'>My Work</a>
+            </li>
 
-                <li class="'main-link">
-                    <a href="#myWork">My Work</a>
-                </li>
+        </ul>
 
-            </ul>
+        <ul class='icon-links'>
 
-            <ul class='icon-links'>
+            <li class='icon-link'>
+                <a href='https://github.com/wramos1' target='_blank' rel='noreferrer'>
+                    <i class='fa fa-github'></i>
+                </a>
+                <span class='icon-descriptors'>Github</span>
+            </li>
 
-                <li class='icon-link'>
-                    <a class="iconLinks" href="https://github.com/wramos1" target='_blank'>
-                        <i class='fa fa-github'></i>
-                    </a>
-                </li>
+            <li class='icon-link'>
+                <a download href='willyamRamosResume.pdf' target='_blank' rel='noreferrer'>
+                    <i class='fa fa-file'></i>
+                </a>
+                <span class='icon-descriptors'>Resume</span>
+            </li>
 
-                <li>
-                    <a target="_blank" class='icon-link' download href='willyamRamosResume.pdf'>
-                        <i class="fa fa-file"></i>
-                    </a>
-                </li>
+            <li class='icon-link'>
+                <a href='#contactMe'>
+                    <i class='fa fa-envelope'></i>
+                </a>
+                <span class='icon-descriptors'>Email</span>
+            </li>
 
-                <li>
-                    <a class='icon-link' href='mailto:ramoswillyam1@gmail.com?subject=Dev'>
-                        <i class='fa fa-envelope'></i>
-                    </a>
-                </li>
+        </ul>
 
-            </ul>
+    </div>
+
+    <div id='landingPage'>
+
+        <div id='fallingIntro'>
+            <h1>Willyam Ramos</h1>
+            <h1>Software Engineer</h1>
         </div>
 
-        <div id="landingContent">
-            <div class="introCover">
-                <div id="profilePic">WR</div>
+        <div id='beginningArrow' style='animation-delay: 1s'>
+            <a class='main-link' href='#aboutMe'>
+                <i class='arrows fa fa-arrow-down'></i>
+            </a>
+        </div>
+
+    </div>
+
+    <div class='reveal' id='aboutMe'>
+
+        <h1>About Me</h1>
+
+        <div id='briefInsight'>
+
+            <img id='portrait' src='./images/unnamed.jpg' />
+
+            <p>After graduating high school, I was a typical teen about to go into college wondering if the major I
+                had
+                chosen, Kinesiology, was right for me. I did not feel certain about it and was hoping I would find
+                another career path as soon as possible. Luckily, I did. A month before my first semester of
+                college, I
+                had been introduced to coding through my sister's friend, a self-taught programmer.
+                His story fueled me
+                to teach myself code and change my major to Computer Science. Even though I knew I could possibly
+                learn
+                code and web development in school, I did not want to wait around to embark on this journey of being
+                a
+                software engineer when I knew it was possible to teach myself if I worked hard enough.
+                So, I bought
+                courses and other essentials in order to teach myself how to code. I spent as much time as possible
+                learning to code after school, in between classes, and sometimes during classes like my CompSci 110
+                class :) . I
+                became hooked as soon as I saw the first lines of HTML and fell in love once the complexity was
+                added
+                with programming
+                languages such as Javascript.
+                Now, I hope to continue to expand my knowledge of other languages and of the best practices when it
+                comes
+                to
+                writing code. I
+                am currently looking for an opportunity to hone my skills in a professional setting and become a
+                valuable asset to a team.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class='reveal' id='skills'>
+
+        <div>
+
+            <h1>Skills</h1>
+
+            <div id='skillContainer'>
+
+                <div class='skill'>
+
+                    <h2>Front-End Skills</h2>
+
+                    <ul>
+                        <li>Javascript</li>
+                        <li>React(Class Based Components & Functional Based Components)</li>
+                        <li>Redux</li>
+                        <li>HTML/CSS/SCSS</li>
+                    </ul>
+
+                </div>
+
+                <div class='skill'>
+
+                    <h2>Development & Workflow</h2>
+
+                    <ul>
+                        <li>Git & Github</li>
+                        <li>Postman</li>
+                        <li>Heroku</li>
+                    </ul>
+
+                </div>
+
+                <div class='skill'>
+
+                    <h2>Other</h2>
+
+                    <ul>
+                        <li>Java</li>
+                    </ul>
+
+                </div>
+
             </div>
-            <div class="introText">
-                <h1>Hi, I'm Willyam Ramos</h1>
-                <h3>I build stuff for the world wide web</h3>
+
+        </div>
+
+    </div>
+
+    <div class='reveal' id='myWork'>
+
+        <h1>Projects</h1>
+
+        <div id='projects'>
+
+            <div class='project' id='whereToWatch'>
+
+                <img src='./images/Wheretowatch.png' alt='WheretowatchProject'>
+                <img src='./images/activeWheretowatch.gif' alt='WheretowatchGif'>
+
+                <h2>Where To Watch</h2>
+
+                <div>
+                    <a class='project-link' href='https://willyamramos.dev/WhereToWatch' target='_blank'
+                        rel='noreferrer'>Visit Project</a>
+
+                    <a class='project-link' href='https://github.com/wramos1/WhereToWatch' target='_blank'
+                        rel='noreferrer'>View Code</a>
+                </div>
+
             </div>
-        </div>
 
-        <div id='aboutMe'>
-            <h1>About Me</h1>
-            <div>
-                <h3>
-                    Hey, I am a web developer with a passion for learning and taking on challenges. Building functional
-                    user interfaces while maintaining the readability of my code is a challenge I strive to complete
-                    every single time. I am currently looking for an opportunity to learn more and show what I can do in
-                    a professional setting. I hope to be a part of your company and become more knowledgable of the best
-                    practices within your team to hone my skills so as to become an integral part of the team.
-                </h3>
-                <img alt='portrait' id='portrait'
-                    src='https://upload.wikimedia.org/wikipedia/commons/4/4d/Star_Wars-_The_Last_Jedi_Japan_Premiere_Red_Carpet-_Adam_Driver_%2827163437599%29_%28cropped%29.jpg' />
+            <div class='project'>
+
+                <img src='./images/unnamed.jpg' alt='WheretowatchProject'>
+                <img src='./images/activeWheretowatch.gif' alt='WheretowatchGif'>
+
+                <h2>Where To Watch</h2>
+
+                <div>
+                    <a class='project-link' href='https://willyamramos.dev/WhereToWatch' target='_blank'
+                        rel='noreferrer'>Visit Project</a>
+                    <a class='project-link' href='https://github.com/wramos1/WhereToWatch' target='_blank'
+                        rel='noreferrer'>View Code</a>
+                </div>
+
             </div>
+
         </div>
 
-        <div id='myWork'>
-            <h1>Projects</h1>
-            <h2>Skills</h2>
-            <span>Front-End</span>
-            <ul>
-                <li>JavaScript(ES6+)</li>
-                <li>React (Hooks & Context API)</li>
-                <li>Redux</li>
-                <li>HTML/CSS/SCSS</li>
-            </ul>
+    </div>
 
-            <!-- <span>Back-End</span>
-            <ul>
-                <li>MongoDB </li>
-                <li></li>
-                <li></li>
-            </ul> -->
+    <div class='reveal' id='contactMe'>
 
-            <span>Development & Workflow</span>
-            <ul>
-                <li>Git & Github</li>
-                <li>Postman</li>
-                <li>Heroku</li>
-            </ul>
+        <h1>Get In Touch</h1>
 
-            <span>Other</span>
-            <ul>
-                <li>Java</li>
-            </ul>
+        <div id='contactOverview'>
+
+            <h3>
+                Currently looking for opportunities to improve my skills in a professional setting. My inbox is always
+                open and I will get back to you as soon as possible!
+            </h3>
+
+            <a href='mailto:ramoswillyam1@gmail.com?subject=DevPosition' target='_blank' rel='noreferrer'>Contact Me</a>
+
         </div>
 
-    </main>
+    </div>
+
+    <div id='closingStatements'>
+
+        <a class='main-link' href='#landingPage'>
+            <i class='arrows fa fa-arrow-up'></i>
+        </a>
+        <h5>Built and Designed by Willyam Ramos</h5>
+
+    </div>
 
 </body>
+
 <script src='app.js'></script>
 
 </html>
