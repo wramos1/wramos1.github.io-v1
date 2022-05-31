@@ -34,4 +34,3 @@ function lightUp() {
 window.addEventListener('scroll', reveal);
 
 window.addEventListener('scroll', lightUp);
-
