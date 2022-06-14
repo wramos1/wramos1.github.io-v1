@@ -451,6 +451,10 @@ body {
         color: blue;
     }
 
+    .main-links {
+        font-size: 1.05em;
+    }
+
     #closingStatements h5 {
         margin: 4% 0;
     }
