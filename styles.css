@@ -72,6 +72,10 @@ body {
     font-size: 1.3em;
 }
 
+#responsiveContactLink {
+    display: none;
+}
+
 .icon-links {
     display: inline-block;
     justify-content: end;
@@ -195,6 +199,8 @@ body {
     line-height: 2em;
     margin: 0 2%;
     font-size: 1.25vw;
+    font-weight: 1000;
+    color: white;
 }
 
 #skills {
@@ -426,6 +432,7 @@ body {
 
     #beginningArrow {
         font-size: 5vw;
+        margin-bottom: 10%;
     }
 
     .icon-links {
@@ -445,7 +452,11 @@ body {
     }
 
     #closingStatements h5 {
-        margin: 3% 0;
+        margin: 4% 0;
+    }
+
+    #closingStatements a {
+        margin: 4% 0;
     }
 
     .navbar {
@@ -456,13 +467,19 @@ body {
         font-size: 2.5vmax;
         line-height: 2em;
     }
+
+    #contactOverview button {
+        font-size: 5vmax;
+    }
 }
+
 
 @media (max-width: 550px) {
     #beginningArrow {
         font-size: 5vw;
     }
 }
+
 
 @media (max-width: 1250px) {
     #portrait {
@@ -471,7 +488,7 @@ body {
     }
 
     #briefInsight p {
-        font-size: 1.25vmax;
+        font-size: 1.3vmax;
     }
 }
 
@@ -489,7 +506,7 @@ body {
     }
 
     #briefInsight p {
-        font-size: 1.8vmax;
+        font-size: 1.9vmax;
     }
 }
 
@@ -502,7 +519,7 @@ body {
     }
 
     .skill {
-        width: 50%;
+        width: 55%;
     }
 
     #projects {
@@ -513,7 +530,7 @@ body {
     }
 
     .project {
-        width: 50%;
+        width: 55%;
     }
 
 }

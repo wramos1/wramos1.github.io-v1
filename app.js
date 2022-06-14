@@ -1,6 +1,5 @@
 //Variables Irrelevant To Functions
 
-
 //Functions & Methods
 
 function reveal() {
@@ -33,12 +32,15 @@ function responsiveNavbar() {
     const iconList = document.querySelector('.icon-links');
     const lastDiv = document.querySelector('#closingStatements');
     const navbar = document.querySelector('.navbar');
+    const contactLink = document.querySelector('#responsiveContactLink')
 
     if (window.innerWidth < 700) {
         lastDiv.insertBefore(iconList, lastDiv.children[1]);
+        contactLink.style.display = 'block'
     }
     else {
-        navbar.insertBefore(iconList, navbar.children[2])
+        navbar.insertBefore(iconList, navbar.children[2]);
+        contactLink.style.display = 'none'
     }
 
     window.addEventListener('resize', () => {
@@ -54,4 +56,4 @@ window.addEventListener('scroll', lightUp);
 
 
 responsiveNavbar();
-window.addEventListener('resize', responsiveNavbar)
+window.addEventListener('resize', responsiveNavbar);
