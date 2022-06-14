@@ -27,10 +27,31 @@ function lightUp() {
         navbar.classList.remove('underline')
     }
 
-}
+};
+
+function responsiveNavbar() {
+    const iconList = document.querySelector('.icon-links');
+    const lastDiv = document.querySelector('#closingStatements');
+    const navbar = document.querySelector('.navbar');
+
+    if (window.innerWidth < 700) {
+        lastDiv.insertBefore(iconList, lastDiv.children[1]);
+    }
+    else {
+        navbar.insertBefore(iconList, navbar.children[2])
+    }
+
+    window.addEventListener('resize', () => {
+        iconList.style.animation = 'none';
+    });
+};
 
 //Calls and Inits
 
 window.addEventListener('scroll', reveal);
 
 window.addEventListener('scroll', lightUp);
+
+
+responsiveNavbar();
+window.addEventListener('resize', responsiveNavbar)

@@ -39,7 +39,6 @@ body {
     flex-direction: row;
     align-items: center;
     list-style: none;
-    animation: 1s ease-out 1 slideInFromLeft;
 }
 
 .navbar a {
@@ -66,6 +65,7 @@ body {
     justify-content: space-around;
     width: 50%;
     left: 0;
+    animation: 1s ease-out 1 slideInFromLeft;
 }
 
 .main-link {
@@ -80,6 +80,7 @@ body {
     gap: 15%;
     right: 0;
     margin-right: 10px;
+    animation: 1s ease-out 1 slideInFromLeft;
 }
 
 .icon-link {
@@ -127,16 +128,16 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-top: 15%;
     animation: 1.5s ease-out 1 fallIntoPlace;
     animation-fill-mode: both;
     color: aqua;
-    font-size: 2.6vw;
+    font-size: 3vmax;
     letter-spacing: 1.5vh;
+    height: inherit;
 }
 
 #fallingIntro h1:last-child {
-    font-size: 2.4vw;
+    font-size: 3.2vw;
 }
 
 #beginningArrow {
@@ -145,6 +146,7 @@ body {
     margin: 5% 0;
     animation: 1.5s ease-out 1 fallIntoPlace;
     animation-fill-mode: both;
+    font-size: 1.7em;
 }
 
 .arrows {
@@ -157,9 +159,10 @@ body {
 }
 
 #aboutMe {
-    height: 100vh;
+    height: fit-content;
     text-align: center;
-    scroll-margin-top: 120px;
+    scroll-margin-top: 80px;
+    margin: 5% 0;
 }
 
 #aboutMe h1 {
@@ -408,7 +411,109 @@ body {
     }
 }
 
-/* Font for basic all text: font-family: 'Rajdhani', cursive; */
-/* Font for supposed logo like home button: font-family: 'Bungee Shade', cursive;  */
-/* Original Background Color 'Baby Blue' : rgb(170, 207, 214) */
-/* Original Navbar Color 'Beigeish' : antiquewhite) */
+
+@media (max-width: 700px) {
+    #fallingIntro {
+        margin: 0 7%;
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    #fallingIntro h1:last-child {
+        font-size: 4.6vw;
+        letter-spacing: 2.5px;
+    }
+
+    #beginningArrow {
+        font-size: 5vw;
+    }
+
+    .icon-links {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        margin: 10px 0 0 0;
+        text-align: center;
+        width: 100%;
+        padding: 0;
+        padding-right: 5px;
+        color: aqua;
+    }
+
+    .icon-links a {
+        color: blue;
+    }
+
+    #closingStatements h5 {
+        margin: 3% 0;
+    }
+
+    .navbar {
+        font-size: 1.1em;
+    }
+
+    #contactOverview h3 {
+        font-size: 2.5vmax;
+        line-height: 2em;
+    }
+}
+
+@media (max-width: 550px) {
+    #beginningArrow {
+        font-size: 5vw;
+    }
+}
+
+@media (max-width: 1250px) {
+    #portrait {
+        max-width: 400px;
+        max-height: 450px;
+    }
+
+    #briefInsight p {
+        font-size: 1.25vmax;
+    }
+}
+
+@media (max-width: 850px) {
+    #briefInsight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    #portrait {
+        max-width: 350px;
+        max-height: 350px;
+    }
+
+    #briefInsight p {
+        font-size: 1.8vmax;
+    }
+}
+
+@media (max-width: 805px) {
+    #skillContainer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .skill {
+        width: 50%;
+    }
+
+    #projects {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .project {
+        width: 50%;
+    }
+
+}
