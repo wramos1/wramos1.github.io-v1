@@ -452,7 +452,9 @@ body {
     }
 
     .main-links {
-        font-size: 1.05em;
+        justify-content: space-between;
+        width: 70%;
+        font-size: 1.6vmax;
     }
 
     #closingStatements h5 {
