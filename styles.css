@@ -123,7 +123,6 @@ body {
     height: 100vh;
     font-size: 150%;
     padding-top: 5%;
-    text-decoration: underline white;
     font-size: 1.5vw;
 }
 
@@ -138,6 +137,7 @@ body {
     font-size: 3vmax;
     letter-spacing: 1.5vh;
     height: inherit;
+    text-decoration: underline white;
 }
 
 #fallingIntro h1:last-child {
@@ -424,18 +424,16 @@ body {
         margin: 0 7%;
         text-align: center;
         font-size: 5vw;
-        text-decoration: underline white;
     }
 
     #fallingIntro h1:last-child {
         font-size: 4.6vw;
         letter-spacing: 2.5px;
-        text-decoration: underline white;
     }
 
     #beginningArrow {
         font-size: 5vw;
-        margin-bottom: 25%;
+        margin-bottom: 28%;
     }
 
     .icon-links {
